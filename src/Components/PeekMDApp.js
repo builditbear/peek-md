@@ -28,7 +28,11 @@ function PeekMDApp(props) {
         onChangeSearchName={onChangeSearchName}
       />
       {/* <ResultsContainer /> */}
-      <ResultsContainer doctorDB={props.doctorDB} />
+      <ResultsContainer
+        doctorDB={props.doctorDB}
+        filter={currentFilter}
+        searchName={searchName}
+      />
     </div>
   );
 }
