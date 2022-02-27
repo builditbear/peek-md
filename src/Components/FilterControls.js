@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from "../media/PeekMDLogo.png";
 
 function FilterControls(props) {
   const filterOptions = [
@@ -21,11 +22,19 @@ function FilterControls(props) {
     <div>
       <img
         className="peek-md-logo"
-        src="./Media/PeekMDLogo.png"
+        src={logo}
         alt="The Peek.MD logo: A red cross on a white background with a caption below reading 'Peek.MD - Provider Lookups"
       ></img>
-      <input type="text" name="search-by-name"></input>
-      <select name="specialty" id="select-specialty" onChange={props.onChange}>
+      <input
+        type="text"
+        name="search-by-name"
+        onChange={props.onChangeSearchName}
+      ></input>
+      <select
+        name="specialty"
+        id="select-specialty"
+        onChange={props.onChangeFilter}
+      >
         <option value="None" key="None">
           Filter by Specialty
         </option>

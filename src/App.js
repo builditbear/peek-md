@@ -1,4 +1,4 @@
-import PeekMDApp from "./Components/PeekMDApp";
+import PeekMDApp from "./components/PeekMDApp";
 import "./App.css";
 
 function App() {
