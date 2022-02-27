@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import PeekMDApp from "./Components/PeekMDApp";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const doctorDB = [
+    {
+      Name: "Dr. Eli Von Schnozblonger, MD",
+      Specialty: "Ophthalmologist",
+      Location: "Bellingham, WA",
+      Rating: 4,
+    },
+    {
+      Name: "Dr. Steve Evets, MD",
+      Specialty: "ENT",
+      Location: "Chicago, IL",
+      Rating: 2,
+    },
+    {
+      Name: "Dr. Kapitan Kranch, ND",
+      Specialty: "PCP",
+      Location: "Los Angeles, CA",
+      Rating: 5,
+    },
+    {
+      Name: "Chris P. Bacon, ARNP",
+      Specialty: "Dermatologist",
+      Location: "Maple Falls, WA",
+      Rating: 3,
+    },
+    {
+      Name: "Dr. Barry White, MD",
+      Specialty: "Cardiologist",
+      Location: "New York, NY",
+      Rating: 4,
+    },
+    {
+      Name: "Dr. Billy-Bob Jo, MD",
+      Specialty: "PCP",
+      Location: "Bellingham, WA",
+      Rating: 4,
+    },
+    {
+      Name: "Dr. Acai Bull, MD",
+      Specialty: "Ophthalmologist",
+      Location: "Kansas City, KA",
+      Rating: 1,
+    },
+  ];
+
+  return <PeekMDApp doctorDB={doctorDB} />;
 }
 
 export default App;
