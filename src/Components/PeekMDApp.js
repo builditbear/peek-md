@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import FilterControls from "./FilterControls";
+import DoctorEntry from "./DoctorEntry";
+import ResultsContainer from "./ResultsContainer";
 
 function PeekMDApp(props) {
   const [currentFilter, setCurrentFilter] = useState("None");
@@ -26,6 +28,7 @@ function PeekMDApp(props) {
         onChangeSearchName={onChangeSearchName}
       />
       {/* <ResultsContainer /> */}
+      <ResultsContainer doctorDB={props.doctorDB} />
     </div>
   );
 }

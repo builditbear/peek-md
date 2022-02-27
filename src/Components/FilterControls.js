@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "../media/PeekMDLogo.png";
 
 function FilterControls(props) {
