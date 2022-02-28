@@ -5,8 +5,9 @@ import Results from "./Results";
 import { AppContainer } from "./ComponentStyles";
 
 function PeekMDApp(props) {
-  const [currentFilter, setCurrentFilter] = useState("None");
+  const [currentFilter, setCurrentFilter] = useState("");
   const [searchName, setSearchName] = useState("");
+  const [selectedDoctor, setSelectedDoctor] = useState(null);
 
   //   Statements for testing state values during test runs.
   //   console.log(`Current search name is ${searchName ? searchName : "nothing"}.`);
@@ -22,16 +23,23 @@ function PeekMDApp(props) {
     setSearchName(searchName);
   };
 
+  const onSelectedDoctorChange = (e, doctor) => {
+    setSelectedDoctor(doctor);
+  };
+
   return (
     <AppContainer>
       <FilterControls
         onChangeFilter={onChangeFilter}
         onChangeSearchName={onChangeSearchName}
+        onSelectedDoctorChange={onSelectedDoctorChange}
       />
       <Results
         doctorDB={props.doctorDB}
         filter={currentFilter}
         searchName={searchName}
+        selectedDoctor={selectedDoctor}
+        onSelectedDoctorChange={onSelectedDoctorChange}
       />
     </AppContainer>
   );

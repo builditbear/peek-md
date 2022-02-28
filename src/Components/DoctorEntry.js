@@ -7,7 +7,9 @@ function DoctorEntry(props) {
   return (
     <DoctorEntryContainer>
       <FlexItemWrapper>
-        <h2>{doctor.name}</h2>
+        <h2 onClick={(e) => props.onSelectedDoctorChange(e, doctor)}>
+          {doctor.name}
+        </h2>
         <p>
           {doctor.specialty} in {doctor.location}
         </p>

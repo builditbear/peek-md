@@ -35,6 +35,7 @@ function FilterControls(props) {
   return (
     <FilterControlContainer>
       <AppLogo
+        onClick={(e) => props.onSelectedDoctorChange(e, null)}
         className="peek-md-logo"
         src={logo}
         alt="The Peek.MD logo: A red cross on a white background with a captio--n below reading 'Peek.MD - Provider Lookups"
@@ -53,7 +54,7 @@ function FilterControls(props) {
           id="select-specialty"
           onChange={props.onChangeFilter}
         >
-          <option value="None" key="None">
+          <option value="" key="">
             Filter by Specialty
           </option>
           {selectItems}

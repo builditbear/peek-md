@@ -33,6 +33,7 @@ const AppContainer = styled.div`
   height: 75vh;
   display: flex;
   margin: 5vw 15vw;
+  overflow: hidden;
 `;
 
 const FilterControlContainer = styled.div`
@@ -45,7 +46,8 @@ const FilterControlContainer = styled.div`
 
 const ResultsContainer = styled.div`
   background-color: #5b6c5d;
-  overflow: scroll;
+  overflow-y: scroll;
+  border: 4px black solid;
   border-radius: 10px;
   flex: 3;
 `;
@@ -81,6 +83,15 @@ const AppLogo = styled.img`
   max-width: 350px;
 `;
 
+const Header = styled.header`
+  flex: 1;
+  margin: 1vw;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffd645;
+  ${"" /* color: #fffffa; */}
+`;
+
 export {
   DoctorEntryContainer,
   FlexItemWrapper,
@@ -94,4 +105,5 @@ export {
   SelectItem,
   TextInput,
   AppLogo,
+  Header,
 };

@@ -12,14 +12,8 @@ function DisplayRating(props) {
 
   const stars = starIDs.map((id) => {
     return (
-      <StarContainer>
-        <img
-          key={id}
-          id={id}
-          src={star}
-          alt="A single, yellow star"
-          // style={{ flex: 0.5 }}
-        ></img>
+      <StarContainer key={id}>
+        <img id={id} src={star} alt="A single, yellow star"></img>
       </StarContainer>
     );
   });
