@@ -57,9 +57,7 @@ This web app is hosted at https://peek-md.netlify.app.
 
 ## Usage
 
-Select the name of any healthcare provider in the results box to see a list of other providers sharing the same specialty.
-Click on the Peek.MD logo to return to the full list of providers. At any time, you can search for a provider by name or filter the list shown in the results box by using
-the appropriately labelled input fields under the Peek.MD logo.
+Select the name of any healthcare provider in the results box to see a list of other providers sharing the same specialty. Click on the Peek.MD logo to return to the full list of providers. At any time, you can search for a provider by name or filter the list shown in the results box. To do so, use the appropriate input fields under the Peek.MD logo.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
