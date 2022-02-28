@@ -4,7 +4,7 @@ Based on README template found here (using under MIT license):
 https://github.com/othneildrew/Best-README-Template
 -->
 
-[![LinkedIn][linkedin-shield]]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
 <br />
