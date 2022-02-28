@@ -4,7 +4,7 @@ Based on README template found here (using under MIT license):
 https://github.com/othneildrew/Best-README-Template
 -->
 
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/feed/?trk=nav_back_to_linkedin]
+[![LinkedIn][linkedin-shield]]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -95,5 +95,4 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
+[linkedin-url]: https://www.linkedin.com/in/builditbear/
