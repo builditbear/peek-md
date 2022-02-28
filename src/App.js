@@ -1,5 +1,4 @@
 import PeekMDApp from "./components/PeekMDApp";
-import "./App.css";
 
 function App() {
   const doctorDB = [
@@ -44,6 +43,48 @@ function App() {
       specialty: "Ophthalmologist",
       location: "Kansas City, KA",
       rating: 1,
+    },
+    {
+      name: "Dr. Smoothie Baans, MD",
+      specialty: "Ophthalmologist",
+      location: "Seattle, KA",
+      rating: 5,
+    },
+    {
+      name: "Steve E. Blunder NP",
+      specialty: "PCP",
+      location: "Seattle, WA",
+      rating: 2,
+    },
+    {
+      name: "Dr. Biggs Tick, MD",
+      specialty: "Gastroenterologist",
+      location: "Kansas City, KA",
+      rating: 5,
+    },
+    {
+      name: "Sheev Palpatine ARNP",
+      specialty: "PCP",
+      location: "Bellingham, WA",
+      rating: 4,
+    },
+    {
+      name: "Dr. Angus Steakbottom, MD",
+      specialty: "Podiatrist",
+      location: "Bellingham, WA",
+      rating: 2,
+    },
+    {
+      name: "Penny N. Cash, NP",
+      specialty: "Pediatrician",
+      location: "New York, NY",
+      rating: 4,
+    },
+    {
+      name: "Dr. Violet Honey, MD",
+      specialty: "Gastroenterologist",
+      location: "Bellingham, WA",
+      rating: 5,
     },
   ];
 

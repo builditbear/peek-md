@@ -1,15 +1,29 @@
 import React from "react";
 import logo from "../media/PeekMDLogo.png";
+// Components representing styled containers and other elements, such as input fields.
+import {
+  FilterControlContainer,
+  FilterSelectContainer,
+  SearchBoxContainer,
+  SelectItem,
+  TextInput,
+  AppLogo,
+} from "./ComponentStyles";
 
 function FilterControls(props) {
+  // Available options for selection in the dropdown select menu.
   const filterOptions = [
-    "Ophthalmologist",
-    "ENT",
-    "PCP",
-    "Dermatologist",
     "Cardiologist",
+    "Dermatologist",
+    "ENT",
+    "Gastroenterologist",
+    "Ophthalmologist",
+    "PCP",
+    "Pediatrician",
+    "Podiatrist",
   ];
 
+  // Generate a list of option elements for rendering based on the above list.
   const selectItems = filterOptions.map((filterOption) => {
     return (
       <option value={filterOption} key={filterOption}>
@@ -19,28 +33,33 @@ function FilterControls(props) {
   });
 
   return (
-    <div>
-      <img
+    <FilterControlContainer>
+      <AppLogo
         className="peek-md-logo"
         src={logo}
-        alt="The Peek.MD logo: A red cross on a white background with a caption below reading 'Peek.MD - Provider Lookups"
-      ></img>
-      <input
-        type="text"
-        name="search-by-name"
-        onChange={props.onChangeSearchName}
-      ></input>
-      <select
-        name="specialty"
-        id="select-specialty"
-        onChange={props.onChangeFilter}
-      >
-        <option value="None" key="None">
-          Filter by Specialty
-        </option>
-        {selectItems}
-      </select>
-    </div>
+        alt="The Peek.MD logo: A red cross on a white background with a captio--n below reading 'Peek.MD - Provider Lookups"
+      ></AppLogo>
+      <SearchBoxContainer>
+        <TextInput
+          type="text"
+          name="search-by-name"
+          placeholder="Search by Name"
+          onChange={props.onChangeSearchName}
+        ></TextInput>
+      </SearchBoxContainer>
+      <FilterSelectContainer>
+        <SelectItem
+          name="specialty"
+          id="select-specialty"
+          onChange={props.onChangeFilter}
+        >
+          <option value="None" key="None">
+            Filter by Specialty
+          </option>
+          {selectItems}
+        </SelectItem>
+      </FilterSelectContainer>
+    </FilterControlContainer>
   );
 }
 
