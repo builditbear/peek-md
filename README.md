@@ -10,7 +10,7 @@ https://github.com/othneildrew/Best-README-Template
 <br />
 <div align="center">
   <a href="https://github.com/builditbear/peek-md.git">
-    <img src="./src/media/PeekMDLogo.png" alt="Logo" width="160" height="160">
+    <img src="./src/media/PeekMDLogo.png" alt="Logo" width="240" height="240">
   </a>
   <p align="center">
     A web app for viewing and filtering a list of healthcare providers.
@@ -26,9 +26,7 @@ https://github.com/othneildrew/Best-README-Template
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
+      <li><a href="#built-with">Built With</a></li>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
