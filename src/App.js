@@ -1,4 +1,4 @@
-import PeekMDApp from "./components/PeekMDApp";
+import PeekMDApp from "./components/PeekMDApp.js";
 
 function App() {
   const doctorDB = [
